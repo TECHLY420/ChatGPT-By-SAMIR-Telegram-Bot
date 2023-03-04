@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "6286699125:AAGn7usBCKrNd_0JqVHNXYgUYgSWPyymODg"
+    tgkey = "6009690227:AAFDlovoIgdxXQTx3jFZQj9GU5zN5gZ2ACI"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Vampire V2.0'
-username = 'Iam_Vampirev2_Bot'
+botname = 'SAM AI'
+username = 'Unknown_ha_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Vampire V2.0'
-        username = 'Iam_Vampirev2_Bot'
+        botname = 'SAM AI'
+        username = 'Unknown_ha_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -93,16 +93,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Vampire V2.0'
-        username = 'Iam_Vampirev2_Bot'
+        botname = 'SAM AI'
+        username = 'Unknown_ha_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Vampire V2.0'
-        username = 'Iam_Vampirev2_Bot'
+        botname = 'SAM AI'
+        username = 'Unknown_ha_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -128,8 +128,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Vampire V2.0'
-        username = 'Iam_Vampirev2_Bot'
+        botname = 'SAM AI'
+        username = 'Unknown_ha_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -189,8 +189,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'Iam_Vampirev2_Bot'
-                botname = 'Vampire V2.0'
+                username = 'Unknown_ha_bot'
+                botname = 'SAM AI'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
